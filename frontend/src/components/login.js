@@ -31,7 +31,7 @@ const Login = () => {
         }) 
         .then(function (response) {
             // console.log(response.data);
-            const {user,token} = response.data
+            const {token} = response.data
             if(!token)
             {
                 console.log('No token returned error')

@@ -15,7 +15,6 @@ const Dashboard = () => {
   const [falert2,setFalert2] = useState(false)
   const [alert,setAlert] = useState(false)
   const [alert2,setAlert2] = useState(false)
-  const [loading,setloading] = useState(false)
 
   const handleSubmit=()=>{
     // console.log(email)
@@ -44,7 +43,7 @@ const Dashboard = () => {
 
   
   const handleQuote=()=>{
-    const random_id =Math.floor(Math.random()*100);
+    var random_id =Math.floor(Math.random()*100);
     if(random_id===0)
     {
       random_id = random_id+1;
