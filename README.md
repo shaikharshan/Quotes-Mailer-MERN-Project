@@ -1,4 +1,5 @@
 ** Quote Generator Major development done on 20-07-24 **
+
 ** By Arshan ** 
 
  The project includes a user registration and subscription management system, a random quote generator, and a scheduled email dispatch feature to ensure users receive their daily dose of motivation.
