@@ -35,7 +35,7 @@ const  sendMailToAllUsers = async(emailObj,quoteObj)=>{
         from:env.EMAIL,
         to:emailObj,
         subject:"From Quote Generator Web. Hello User 👋😃, Your Quote of the day is Here !", 
-        html: `<h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Quote Of The Day</h1><h2>${quoteObj.quote}</h2><p>&emsp;- ${quoteObj.author}</p><hr/><span>Quotes By Quote Generator</span>`, // html body
+        html: `<h1>Quote Of The Day</h1><h2>${quoteObj.quote}</h2><p>&emsp;- ${quoteObj.author}</p><hr/><span>Quotes By Quote Generator</span>`, // html body
     }
     transporter.sendMail(mailOptions,(err,resp)=>{
         if(err)
@@ -52,7 +52,7 @@ const  sendMailToAllUsers = async(emailObj,quoteObj)=>{
 
 const sendEmailAll = () =>{
     try {
-        cron.schedule('*/10 * * * * *',async()=>{
+        cron.schedule('0 10 * * *',async()=>{
             var usersData = await Quote.find({})
             var emails = []
             if(usersData.length>0)

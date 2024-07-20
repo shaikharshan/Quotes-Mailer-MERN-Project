@@ -36,7 +36,7 @@ const getEmailPermit = async(req,res)=>{
         from:EMAIL,
         to:email,
         subject:"From Quote Generator Web, Regarding your daily subscription.", 
-        html: `<h1>Hello ${name} , Subscription Successful!</h1><p>This was just a follow up mail to notify you that your subscription was successful. You will receive your daily quotes through this email from now.</p>`, // html body
+        html: `<h1>Hello ${name} , Subscription Successful!</h1><p>This was just a follow up mail to notify you that your subscription was successful. You will receive your daily quotes at 10 AM through this email from now.</p>`, // html body
     }
     // console.log(message)
     transporter.sendMail(message).then(()=>{
