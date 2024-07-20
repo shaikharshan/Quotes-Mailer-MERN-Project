@@ -1,0 +1,24 @@
+
+# files
+/env.js
+.env
+
+
+
+#folders
+node_modules/
+utils/
+public/
+
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
